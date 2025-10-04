@@ -108,12 +108,19 @@ const Homepage = () => {
       {/* Mobile Category Pills & Video */}
       <div className="lg:hidden container mx-auto px-4 py-6">
         <div className="grid grid-cols-2 gap-3 mb-6">
-          {["Dikiş Makinaları", "Ütü Makinaları", "Yedek Parça", "Fabrika Kurulum"].map((title, idx) => (
-            <a key={idx} href="#" className="bg-orange-500 hover:bg-orange-600 text-white text-center py-3 px-4 rounded-3xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">
-              {title}
-            </a>
-          ))}
-        </div>
+  <Link to="/Dikis" className="bg-orange-500 hover:bg-orange-600 text-white text-center py-3 px-4 rounded-3xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+    Dikiş Makinaları
+  </Link>
+  <Link to="/Utu" className="bg-orange-500 hover:bg-orange-600 text-white text-center py-3 px-4 rounded-3xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+    Ütü Makinaları
+  </Link>
+  <Link to="/Yedekparca" className="bg-orange-500 hover:bg-orange-600 text-white text-center py-3 px-4 rounded-3xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+    Yedek Parça
+  </Link>
+  <Link to="/Fabrika" className="bg-orange-500 hover:bg-orange-600 text-white text-center py-3 px-4 rounded-3xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+    Fabrika Kurulum
+  </Link>
+</div>
 
         <div className="aspect-video rounded-2xl shadow-2xl overflow-hidden">
           <video className="w-full h-full object-cover" controls autoPlay muted loop>
