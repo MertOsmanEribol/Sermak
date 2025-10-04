@@ -77,24 +77,22 @@ const Header = () => {
       )}
 
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-30 bg-orange-500 bg-opacity-80 backdrop-blur-sm">
+      <nav className="fixed top-0 left-0 right-0 z-30 bg-orange- bg-opacity-80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-center lg:justify-between">
-            <Link to="/Homepage">
-              <div className="flex items-center space-x-4">
-                <span className="hidden lg:block text-white text-xl font-bold">
-                  SERMAK
-                </span>
-                <img
-                  src="sermak-logo.png"
-                  alt="Sermak Logo"
-                  className="w-24 h-24 lg:w-24 lg:h-24"
-                />
-                <span className="hidden lg:block text-white text-xl font-bold">
-                  MAKİNA
-                </span>
-              </div>
-            </Link>
+           <Link to="/Homepage"> <div className="flex items-center space-x-4">
+              <span className="hidden lg:block text-black text-xl font-bold">
+                SERMAK
+              </span>
+              <img
+                src="sermak-logo.png"
+                alt="Sermak Logo"
+                className="w-24 h-24 lg:w-24 lg:h-24"
+              />
+              <span className="hidden lg:block text-black text-xl font-bold">
+                MAKİNA
+              </span>
+            </div></Link>
 
             {/* Mobile Menu Button */}
             <button
@@ -107,7 +105,7 @@ const Header = () => {
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-5">
               <div className="flex space-x-6">
-                <Link to="/Dikis" className="text-white hover:text-orange-500 font-semibold">
+                <Link to="/Dikis" className="text-white  hover:text-orange-500 font-semibold">
                   Dikiş Makinaları
                 </Link>
                 <Link to="/Utu" className="text-white hover:text-orange-500 font-semibold">
