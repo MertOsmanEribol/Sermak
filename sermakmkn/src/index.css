@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @media (min-width: 890px) and (max-width: 1020px) {
+    .wave-logo-wrapper {
+      position: relative;
+      left: 5%; 
+    }
+  }
+  
+        :root {
+            --primary-color: #f17e01;
+        }
+        
+        .primary-bg { background-color: var(--primary-color); }
+        .primary-text { color: var(--primary-color); }
+        .primary-hover:hover { background-color: #d66e00; }
+        
+        .carousel-item { display: none; }
+        .carousel-item.active { display: block; }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+        
+        @keyframes slideOut {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+        
+        .slide-in { animation: slideIn 0.5s ease-in-out; }
+        .slide-out { animation: slideOut 0.5s ease-in-out; }
+   
+}
+ .arkaplan{
+    background-image: url(public/header.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .dikisbg{
+  background-image: url(img1/3.jpg);
+  background-position: center;
+  background-size: cover;
+ 
+ }
