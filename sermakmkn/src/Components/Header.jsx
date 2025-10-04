@@ -104,7 +104,7 @@ const Header = () => {
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-5">
               <div className="flex space-x-6">
-                <link to href="Dikis" className="text-white  hover:text-orange-500 font-semibold">
+                <link to="Dikis" className="text-white  hover:text-orange-500 font-semibold">
                   Dikiş Makinaları
                 </link>
                 <a href="Utu" className="text-white hover:text-orange-500 font-semibold">
