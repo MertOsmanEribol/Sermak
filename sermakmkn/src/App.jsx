@@ -26,7 +26,7 @@ function App() {
            <Route path="/Iletisim" element={<Iletisim />} />
            <Route path="/Hakkimizda" element={<Hakkimizda />} />
             <Route path="/Magazamiz" element={<Magazamiz/>} />
-           
+            
         </Routes>
       </Router>
     </div>
