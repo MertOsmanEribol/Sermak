@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight, FaEnvelope, FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -81,10 +82,10 @@ const Homepage = () => {
           ))}
 
           {/* Controls */}
-          <button onClick={prevSlide} className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-black bg-opacity-60 text-white rounded-full hover:bg-opacity-80 flex items-center justify-center">
+          <button onClick={prevSlide} className="absolute left-4 cursor-pointer top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-black bg-opacity-60 text-white rounded-full hover:bg-opacity-80 flex items-center justify-center">
             <FaChevronLeft />
           </button>
-          <button onClick={nextSlide} className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-black bg-opacity-60 text-white rounded-full hover:bg-opacity-80 flex items-center justify-center">
+          <button onClick={nextSlide} className="absolute cursor-pointer right-4 top-1/2 transform -translate-y-1/2 z-20 w-12 h-12 bg-black bg-opacity-60 text-white rounded-full hover:bg-opacity-80 flex items-center justify-center">
             <FaChevronRight />
           </button>
 
